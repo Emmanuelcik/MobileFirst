@@ -215,9 +215,28 @@ main{
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
-.currency-table--date p{
+.currency-table--date p, 
+.comission-table--date p{
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 300;
     color: var(--warm-black);
+}
+
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+    text-align: center;
+}
+.product-detail--batata-logo{
+    position: absolute;
+    height: 25px;
+    background-image: url("../assets/icons/batata.svg");
+}
+.main-product-detail h2{
+    color: var(--just-white);
 }
