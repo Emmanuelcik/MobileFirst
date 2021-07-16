@@ -354,15 +354,25 @@ main{
 
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 20px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.black-container{
+    background-color: var(--black);
+}
+.black-container .plan-card--title{
+    color: var(--just-white);
+}
+.black-container .plan-card--price{
+    color: var(--just-white);
 }
 .recomendado{
     position: absolute;
@@ -374,9 +384,15 @@ main{
     color: var(--just-white);
     left: calc(50% - 60px);
     top: -15px;
-    font-size: 1.2rem;   
+    font-size: 1.2rem;
+    font-weight: 700;   
 }
-
+.r2{
+    background-color: var(--secondary-blue);
+}
+.r3{
+    background-color: var(--grey);
+}
 .plan-card--title{
     padding-top: 30px;
     font-size: 1.4rem;
@@ -415,7 +431,6 @@ main{
     line-height: 1.8rem;
     color: var(--black);
     font-family: "DM Sans", sans-serif;
-
 }
 .plan-card--ca span{
     display: inline-block;
@@ -423,4 +438,11 @@ main{
     height: 20px;
     background-image: url("../assets/icons/orange-right-arrow.svg");
     vertical-align: text-bottom;
+}
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
